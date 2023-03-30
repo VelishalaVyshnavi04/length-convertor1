@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>unit converter</title>
+        <style>
+             .mydiv
+             {
+                background-color:pink;
+
+             }
+             
+        </style>
+    
+    </head>
+
+    <body bgcolor="">
+        <center>
+            <h1>Weight Convertor</h1>
+        </center>
+        <br>
+        <div class="mydiv">
+            <center>
+                <h1>Kilogram to Gram</h1>
+            </center>
+            <center>
+                <form>
+                   
+                        <table>
+                            <center>
+                               
+                                <tr>
+                                    
+                                    <td><input type="text" id="kg"></td>
+                                    <td>Kilogram</td>
+                            
+                                    <td>=</td>
+                                    
+                                    <td><input type="text" id="gram"></td>
+                                    <td>grams</td>
+                    
+                                </tr>
+                                
+                            </center>
+                            
+                        </table>
+                        <script >
+                           var kg=document.getElementById("kg");
+    var gram=document.getElementById("gram")
+    kg.addEventListener("keyup",result);
+    
+    function result()
+    {
+        gram.value=Number(kg.value)*1000;
+    }
+                            </script>
+                     
+                   
+                    </form>
+            </center>
+        
+           </div>
+      
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Tonne To Kilograms</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="tonne"></td>
+                                <td>Tonne</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="kg1"></td>
+                                <td>Kilograms</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var tonne=document.getElementById("tonne");
+var kg1=document.getElementById("kg1")
+tonne.addEventListener("keyup",result);
+
+function result()
+{
+    kg1.value=Number(tonne1.value)*1000;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Tonne To grams</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="tonne1"></td>
+                                <td>Tonne</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="g2"></td>
+                                <td>Grams</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var tonne1=document.getElementById("tonne1");
+var g2=document.getElementById("g2")
+tonne1.addEventListener("keyup",result);
+
+function result()
+{
+    g2.value=Number(tonne1.value)*100000;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Grams to Kilograms</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="g3"></td>
+                                <td>Grams</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="kg3"></td>
+                                <td>Kilograms</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var g3=document.getElementById("g3");
+var kg3=document.getElementById("kg3")
+g3.addEventListener("keyup",result);
+
+function result()
+{
+    kg3.value=Number(g3.value)*0.001;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+     
+        
+    
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>unit converter</title>
+        <style>
+             .mydiv
+             {
+                background-color:pink;
+
+             }
+             
+        </style>
+    
+    </head>
+
+    <body bgcolor="">
+        <center>
+            <h1>Length Convertor</h1>
+        </center>
+        <br>
+       
+       <div class="mydiv">
+        <center>
+            <h1>Meter To Centimeter</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="meter"></td>
+                                <td>Meter</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="centimeter"></td>
+                                <td>CentiMeters</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var lengthinmeter=document.getElementById("meter");
+var lengthincentimeter=document.getElementById("centimeter")
+meter.addEventListener("keyup",result);
+
+function result()
+{
+    lengthincentimeter.value=Number(lengthinmeter.value)*100;
+}
+
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Kilometer To Meter</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="kilometer"></td>
+                                <td>Kilometer</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="meter1"></td>
+                                <td>Meters</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var lengthinkilometer=document.getElementById("kilometer");
+var lengthinmeter1=document.getElementById("meter1")
+kilometer.addEventListener("keyup",result);
+
+function result()
+{
+    lengthinmeter1.value=Number(lengthinkilometer.value)*1000;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Kilometer To Centimeter</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="kilometer1"></td>
+                                <td>Kilometer</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="centimeter1"></td>
+                                <td>Centimeters</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var lengthinkilometer1=document.getElementById("kilometer1");
+var lengthincentimeter1=document.getElementById("centimeter1")
+kilometer1.addEventListener("keyup",result);
+
+function result()
+{
+    lengthincentimeter1.value=Number(lengthinkilometer1.value)*100000;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Centimeter To Meter</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="Centimeter2"></td>
+                                <td>Centimeter</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="meter2"></td>
+                                <td>Meters</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var lengthinCentimeter2=document.getElementById("Centimeter2");
+var lengthinmeter2=document.getElementById("meter2")
+Centimeter2.addEventListener("keyup",result);
+
+function result()
+{
+    lengthinmeter2.value=Number(lengthinCentimeter2.value)*0.01;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+     
+        
+    
+    </body>
+</html>

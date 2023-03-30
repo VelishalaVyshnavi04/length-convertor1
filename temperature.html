@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>unit converter</title>
+        <style>
+             .mydiv
+             {
+                background-color:pink;
+
+             }
+            
+        </style>
+    
+    </head>
+
+    <body bgcolor="">
+        <center>
+            <h1>Temperature Convertor</h1>
+        </center>
+        <br>
+        <div class="mydiv">
+            <center>
+                <h1>Celsius to Fahrenheit</h1>
+            </center>
+            <center>
+                <form>
+                   
+                        <table>
+                            <center>
+                               
+                                <tr>
+                                    
+                                    <td><input type="text" id="c"></td>
+                                    <td>Celsius</td>
+                            
+                                    <td>=</td>
+                                    
+                                    <td><input type="text" id="f"></td>
+                                    <td>Fahrenheit</td>
+                    
+                                </tr>
+                                
+                            </center>
+                            
+                        </table>
+                        <script >
+                           var c=document.getElementById("c");
+    var f=document.getElementById("f")
+    c.addEventListener("keyup",result);
+    
+    function result()
+    {
+        f.value=(Number(c.value)*1.8000)+32.00;
+    }
+                            </script>
+                     
+                   
+                    </form>
+            </center>
+        
+           </div>
+      
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Fahrenheit To Celsius</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="f1"></td>
+                                <td>fahrenheit</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="c1"></td>
+                                <td>celsius</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var f1=document.getElementById("f1");
+var c1=document.getElementById("c1")
+f1.addEventListener("keyup",result);
+
+function result()
+{
+    c1.value=(Number(f1.value)-32)/1.8;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Celsius to Kelvin</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="c2"></td>
+                                <td>Celsius</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="k1"></td>
+                                <td>Kelvin</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var c2=document.getElementById("c2");
+var k1=document.getElementById("k1")
+c2.addEventListener("keyup",result);
+
+function result()
+{
+    k1.value=Number(c2.value)+273.15;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+       <br>
+       <div class="mydiv">
+        <center>
+            <h1>Kelvin to Celsius</h1>
+        </center>
+        <center>
+            <form>
+               
+                    <table>
+                        <center>
+                           
+                            <tr>
+                                
+                                <td><input type="text" id="k3"></td>
+                                <td>kelvin</td>
+                        
+                                <td>=</td>
+                                
+                                <td><input type="text" id="c3"></td>
+                                <td>Celsius</td>
+                
+                            </tr>
+                            
+                        </center>
+                        
+                    </table>
+                    <script  >
+                        var k3=document.getElementById("k3");
+var c3=document.getElementById("c3")
+k3.addEventListener("keyup",result);
+
+function result()
+{
+    c3.value=Number(k3.value)-273.15;
+}
+                 
+                        </script>
+                 
+               
+                </form>
+        </center>
+    
+       </div>
+     
+        
+    
+    </body>
+</html>
